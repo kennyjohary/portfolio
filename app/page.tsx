@@ -73,10 +73,12 @@ export default function Home() {
           </FadeInUp>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { title: 'ETL Multi-connecteurs', tech: 'Ruby on Rails, FTP, PostgreSQL', desc: '30+ connecteurs, réduction support -50%\nProjet : Sowell et Sowell+' },
-              { title: 'Back-office CRUD', tech: 'Ruby on Rails', desc: 'Dashboard admin, 90% tests coverage\nProjet : Sowell et Sowell+' },
-              { title: 'Customisation Odoo', tech: 'Python, Odoo, XML', desc: 'Modules RH, MRP, Vente & Achat, Inventaire\nProjet : MIM et Clinique NOA'
-               }
+              { title: 'ETL Multi-connecteurs', tech: 'Ruby on Rails, FTP, Kiba-jobs', desc: '30+ connecteurs, réduction support -50%\nProjet : Sowell et Sowell+' },
+              { title: 'Back-office CRUD', tech: 'Ruby on Rails, PostgreSQL', desc: 'Dashboard admin, 90% tests coverage\nProjet : Sowell et Sowell+' },
+              { title: 'Application Centre commercial', tech: 'Angular, MongoDB, Typescript', desc: 'Gestion des boutiques, produits et commandes, tests et CRUD\nProjet : Mean IT University' },
+              { title: 'Customisation Odoo', tech: 'Python, Odoo, XML', desc: 'Modules RH, MRP, Vente & Achat, Inventaire\nProjet : MIM et Clinique NOA' },
+              { title: 'Data scientist', tech: 'Python, Firebase, Pandas', desc: 'Scrapping de données, analyse et visualisation\nProjet : R@ndevTeam' },
+              { title: 'Application de Gestion', tech: 'JAVA(Spring boot), PostgreSQL, Thymeleaf', desc: 'Gestion des étudiants, des sécurités et formulaires \nProjet : HEI' }
             ].map((project, idx) => (
               <FadeInUp key={idx} delay={idx * 0.1}>
                 <div className="card-hover glass rounded-xl p-6 h-full hover:border-blue-500/50 transition-colors">
