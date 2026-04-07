@@ -22,7 +22,7 @@ export default function Home() {
         <div className="container mx-auto text-center">
           <FadeInUp>
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-gray-900 dark:text-white">
-             <span className="gradient-text">⚡ Compétences techniques</span>
+             ⚡<span className="gradient-text"> Compétences techniques</span>
             </h2>
           </FadeInUp>
           <StaggerContainer>
@@ -43,7 +43,7 @@ export default function Home() {
         <div className="container mx-auto">
           <FadeInUp>
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              <span className="gradient-text">💼 Expériences professionnelles</span>
+              💼<span className="gradient-text"> Expériences professionnelles</span>
             </h2>
           </FadeInUp>
           <div className="max-w-3xl mx-auto space-y-6">
@@ -68,7 +68,7 @@ export default function Home() {
         <div className="container mx-auto">
           <FadeInUp>
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              <span className="gradient-text">🚀 Projets récents</span>
+              🚀<span className="gradient-text"> Projets récents</span>
             </h2>
           </FadeInUp>
           <div className="grid md:grid-cols-3 gap-6">
@@ -80,7 +80,7 @@ export default function Home() {
             ].map((project, idx) => (
               <FadeInUp key={idx} delay={idx * 0.1}>
                 <div className="card-hover glass rounded-xl p-6 h-full hover:border-blue-500/50 transition-colors">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{project.title}</h3>
+                  <h3 className="text-xl font-semibold dark:text-white">{project.title}</h3>
                   <p className="text-blue-600 dark:text-blue-400 text-sm mt-2">{project.tech}</p>
                   <p className="text-gray-600 dark:text-gray-300 mt-3 whitespace-pre-line">
                     {project.desc}
@@ -96,7 +96,7 @@ export default function Home() {
         <div className="container mx-auto text-center max-w-2xl">
           <FadeInUp>
             <h2 className="text-3xl md:text-4xl font-bold mb-12">
-              <span className="gradient-text">📬 Me contacter</span>
+              📬<span className="gradient-text"> Me contacter</span>
             </h2>
             <div className="glass rounded-xl p-8 space-y-4">
               <p className="text-gray-600 dark:text-gray-300">Intéressé par mon profil ?</p>

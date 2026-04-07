@@ -56,8 +56,8 @@ export default function Navbar() {
         : 'bg-white shadow-lg border-b border-gray-200 py-2'
     } else {
       return theme === 'dark'
-        ? 'bg-gray-900/50 backdrop-blur-sm py-5'
-        : 'bg-white/80 backdrop-blur-sm py-5'
+        ? 'bg-gray-900/50 backdrop-blur-sm py-3'
+        : 'bg-white/80 backdrop-blur-sm py-3'
     }
   }
 

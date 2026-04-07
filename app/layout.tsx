@@ -6,7 +6,6 @@ import { Theme } from './theme'
 
 const inter = Inter({ subsets: ['latin'] })
 
-// ✅ Les metadata RESTENT ici (pas de 'use client')
 export const metadata: Metadata = {
   title: {
     default: 'Kenny Johary | Développeur Fullstack',
@@ -17,12 +16,20 @@ export const metadata: Metadata = {
   authors: [{ name: 'Kenny Johary Randria Harison' }],
   openGraph: {
     title: 'Kenny Johary - Développeur Fullstack',
-    description: 'Développeur backend Python/Odoo spécialisé Next.js',
-    url: 'https://ton-site.com',
+    url: 'https://portfolio-nshx.vercel.app/',
     siteName: 'Kenny Johary Portfolio',
-    images: [{ url: 'https://ton-site.com/og-image.jpg', width: 1200, height: 630 }],
+    images: [{ 
+      url: '/ken.png',
+      width: 1200, 
+      height: 630,
+      alt: 'Kenny Johary'
+    }],
     locale: 'fr_FR',
     type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 }
 
