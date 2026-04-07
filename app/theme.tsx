@@ -1,0 +1,18 @@
+// src/app/providers/ThemeProvider.tsx
+'use client'
+
+import { ThemeProvider as NextThemesProvider } from 'next-themes'
+import { ReactNode } from 'react'
+
+export function Theme({ children }: { children: ReactNode }) {
+  return (
+    <NextThemesProvider
+      attribute="class"
+      defaultTheme="system"
+      enableSystem
+      disableTransitionOnChange={false}
+    >
+      {children}
+    </NextThemesProvider>
+  )
+}
