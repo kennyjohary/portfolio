@@ -2,12 +2,15 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import ThemeProvider from './themetoggle'
+import LanguageSwitcher from './languagewitcher'
 import { useTheme } from 'next-themes'
+import { useLanguage } from '../contexts/languagecontext'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [showName, setShowName] = useState(false)
   const { theme } = useTheme()
+  const { t } = useLanguage()  
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => setMounted(true), [])
@@ -29,10 +32,10 @@ export default function Navbar() {
   }, [])
 
   const navItems = [
-    { name: 'Accueil', href: '#hero' },
-    { name: 'Expériences', href: '#experiences' },
-    { name: 'Projets', href: '#projets' },
-    { name: 'Contact', href: '#contact' }
+    { name: t('nav.home'), href: '#hero' },
+    { name: t('nav.experiences'), href: '#experiences' },
+    { name: t('nav.projects'), href: '#projets' },
+    { name: t('nav.contact'), href: '#contact' }
   ]
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -112,6 +115,7 @@ export default function Navbar() {
                 </a>
               ))}
             </div>
+            <LanguageSwitcher /> 
             <ThemeProvider />
           </div>
         </div>
